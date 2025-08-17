@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a7294f6d-5378-4593-adfb-0e742872ee6a" name="Changes" comment="First commit">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Python/L(numpy).ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/Python/L(numpy).ipynb" afterDir="false" />
-    </list>
+    <list default="true" id="a7294f6d-5378-4593-adfb-0e742872ee6a" name="Changes" comment="First commit" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -30,12 +27,12 @@
     &quot;assignee&quot;: &quot;Votr2x&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/Votr2x/CODERS.git",
-    "accountId": "b6c2f23d-b45c-4174-b73a-6c849ef1a4d0"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Votr2x/CODERS.git&quot;,
+    &quot;accountId&quot;: &quot;51cae903-51bf-4d28-ae75-2c803f1bdaf1&quot;
   }
-}]]></component>
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 1
 }</component>
@@ -59,7 +56,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "jupyter.general.settings",
+    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
     "to.speed.mode.migration.done": "true",
     "vue.rearranger.settings.migration": "true"
   }
@@ -98,7 +95,6 @@
       <workItem from="1755447338349" duration="1247000" />
       <workItem from="1755453936731" duration="305000" />
       <workItem from="1755454257501" duration="337000" />
-      <workItem from="1755455652366" duration="332000" />
     </task>
     <task id="LOCAL-00001" summary="First commit">
       <option name="closed" value="true" />

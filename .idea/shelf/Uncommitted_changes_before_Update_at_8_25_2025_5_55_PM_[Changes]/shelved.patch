@@ -1,0 +1,426 @@
+Index: Mentor Tasks/Python/NUMPY/Numpy-Pandas Mentor Tasks 21.08.2025.ipynb
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>{\r\n \"cells\": [\r\n  {\r\n   \"cell_type\": \"code\",\r\n   \"execution_count\": 39,\r\n   \"id\": \"fe61ec45\",\r\n   \"metadata\": {},\r\n   \"outputs\": [\r\n    {\r\n     \"name\": \"stdout\",\r\n     \"output_type\": \"stream\",\r\n     \"text\": [\r\n      \"Requirement already satisfied: openpyxl in c:\\\\programdata\\\\anaconda3\\\\lib\\\\site-packages (3.1.2)\\n\",\r\n      \"Requirement already satisfied: et-xmlfile in c:\\\\programdata\\\\anaconda3\\\\lib\\\\site-packages (from openpyxl) (1.1.0)\\n\"\r\n     ]\r\n    }\r\n   ],\r\n   \"source\": [\r\n    \"%matplotlib inline\\n\",\r\n    \"import pandas as pd\\n\",\r\n    \"import numpy as np\\n\",\r\n    \"import matplotlib.pyplot as plt\\n\",\r\n    \"import sys\\n\",\r\n    \"!pip install openpyxl\"\r\n   ]\r\n  },\r\n  {\r\n   \"cell_type\": \"code\",\r\n   \"execution_count\": 40,\r\n   \"id\": \"394dc7ec\",\r\n   \"metadata\": {},\r\n   \"outputs\": [\r\n    {\r\n     \"data\": {\r\n      \"text/html\": [\r\n       \"<div>\\n\",\r\n       \"<style scoped>\\n\",\r\n       \"    .dataframe tbody tr th:only-of-type {\\n\",\r\n       \"        vertical-align: middle;\\n\",\r\n       \"    }\\n\",\r\n       \"\\n\",\r\n       \"    .dataframe tbody tr th {\\n\",\r\n       \"        vertical-align: top;\\n\",\r\n       \"    }\\n\",\r\n       \"\\n\",\r\n       \"    .dataframe thead th {\\n\",\r\n       \"        text-align: right;\\n\",\r\n       \"    }\\n\",\r\n       \"</style>\\n\",\r\n       \"<table border=\\\"1\\\" class=\\\"dataframe\\\">\\n\",\r\n       \"  <thead>\\n\",\r\n       \"    <tr style=\\\"text-align: right;\\\">\\n\",\r\n       \"      <th></th>\\n\",\r\n       \"      <th>Name</th>\\n\",\r\n       \"      <th>Age (Years)</th>\\n\",\r\n       \"      <th>Income ($)</th>\\n\",\r\n       \"      <th>Join Date</th>\\n\",\r\n       \"      <th>Gender</th>\\n\",\r\n       \"      <th>SparseColumn</th>\\n\",\r\n       \"      <th>Category</th>\\n\",\r\n       \"    </tr>\\n\",\r\n       \"  </thead>\\n\",\r\n       \"  <tbody>\\n\",\r\n       \"    <tr>\\n\",\r\n       \"      <th>0</th>\\n\",\r\n       \"      <td>John</td>\\n\",\r\n       \"      <td>25.0</td>\\n\",\r\n       \"      <td>40000</td>\\n\",\r\n       \"      <td>2023-01-10</td>\\n\",\r\n       \"      <td>Male</td>\\n\",\r\n       \"      <td>None</td>\\n\",\r\n       \"      <td>A</td>\\n\",\r\n       \"    </tr>\\n\",\r\n       \"    <tr>\\n\",\r\n       \"      <th>1</th>\\n\",\r\n       \"      <td>Jane</td>\\n\",\r\n       \"      <td>30.0</td>\\n\",\r\n       \"      <td>50000</td>\\n\",\r\n       \"      <td>2023-02-15</td>\\n\",\r\n       \"      <td>Female</td>\\n\",\r\n       \"      <td>None</td>\\n\",\r\n       \"      <td>B</td>\\n\",\r\n       \"    </tr>\\n\",\r\n       \"    <tr>\\n\",\r\n       \"      <th>2</th>\\n\",\r\n       \"      <td>Alice</td>\\n\",\r\n       \"      <td>NaN</td>\\n\",\r\n       \"      <td>60000</td>\\n\",\r\n       \"      <td>2023-03-20</td>\\n\",\r\n       \"      <td>Female</td>\\n\",\r\n       \"      <td>None</td>\\n\",\r\n       \"      <td>C</td>\\n\",\r\n       \"    </tr>\\n\",\r\n       \"    <tr>\\n\",\r\n       \"      <th>3</th>\\n\",\r\n       \"      <td>Bob</td>\\n\",\r\n       \"      <td>35.0</td>\\n\",\r\n       \"      <td>7000000</td>\\n\",\r\n       \"      <td>2023-13-25</td>\\n\",\r\n       \"      <td>Male</td>\\n\",\r\n       \"      <td>None</td>\\n\",\r\n       \"      <td>A</td>\\n\",\r\n       \"    </tr>\\n\",\r\n       \"    <tr>\\n\",\r\n       \"      <th>4</th>\\n\",\r\n       \"      <td>None</td>\\n\",\r\n       \"      <td>29.0</td>\\n\",\r\n       \"      <td>55000</td>\\n\",\r\n       \"      <td>NaN</td>\\n\",\r\n       \"      <td>Female</td>\\n\",\r\n       \"      <td>None</td>\\n\",\r\n       \"      <td>B</td>\\n\",\r\n       \"    </tr>\\n\",\r\n       \"  </tbody>\\n\",\r\n       \"</table>\\n\",\r\n       \"</div>\"\r\n      ],\r\n      \"text/plain\": [\r\n       \"   Name   Age (Years)  Income ($)   Join Date  Gender SparseColumn Category\\n\",\r\n       \"0   John         25.0       40000  2023-01-10    Male         None        A\\n\",\r\n       \"1   Jane         30.0       50000  2023-02-15  Female         None        B\\n\",\r\n       \"2  Alice          NaN       60000  2023-03-20  Female         None        C\\n\",\r\n       \"3    Bob         35.0     7000000  2023-13-25    Male         None        A\\n\",\r\n       \"4   None         29.0       55000         NaN  Female         None        B\"\r\n      ]\r\n     },\r\n     \"execution_count\": 40,\r\n     \"metadata\": {},\r\n     \"output_type\": \"execute_result\"\r\n    }\r\n   ],\r\n   \"source\": [\r\n    \"data = {\\n\",\r\n    \"    \\\"Name \\\": [\\\"John\\\", \\\"Jane\\\", \\\"Alice\\\", \\\"Bob\\\", None],\\n\",\r\n    \"    \\\"Age (Years)\\\": [25, 30, np.nan, 35, 29],\\n\",\r\n    \"    \\\"Income ($)\\\": [40000, 50000, 60000, 7000000, 55000],\\n\",\r\n    \"    \\\"Join Date\\\": [\\\"2023-01-10\\\", \\\"2023-02-15\\\", \\\"2023-03-20\\\", \\\"2023-13-25\\\", \\\"NaN\\\"],\\n\",\r\n    \"    \\\"Gender\\\": [\\\"Male\\\", \\\"Female\\\", \\\"Female\\\", \\\"Male\\\", \\\"Female\\\"],\\n\",\r\n    \"    \\\"Gender\\\": [\\\"Male\\\", \\\"Female\\\", \\\"Female\\\", \\\"Male\\\", \\\"Female\\\"], \\n\",\r\n    \"    \\\"SparseColumn\\\": [None, None, None, None, None],\\n\",\r\n    \"    \\\"Category\\\": [\\\"A\\\", \\\"B\\\", \\\"C\\\", \\\"A\\\", \\\"B\\\"],\\n\",\r\n    \"}\\n\",\r\n    \"df = pd.DataFrame(data)\\n\",\r\n    \"df\"\r\n   ]\r\n  },\r\n  {\r\n   \"cell_type\": \"code\",\r\n   \"execution_count\": 25,\r\n   \"id\": \"3a7ec338\",\r\n   \"metadata\": {},\r\n   \"outputs\": [],\r\n   \"source\": [\r\n    \"# 1. Sütun adlarından boşluqları, xüsusi simvolları silin və uyğun bir formata çevirin.\"\r\n   ]\r\n  },\r\n  {\r\n   \"cell_type\": \"code\",\r\n   \"execution_count\": 27,\r\n   \"id\": \"c1d7c221\",\r\n   \"metadata\": {},\r\n   \"outputs\": [],\r\n   \"source\": [\r\n    \"# 2. DataFrame-in məlumatlarını və sütunların hər birinin type-ını çap edin.\"\r\n   ]\r\n  },\r\n  {\r\n   \"cell_type\": \"code\",\r\n   \"execution_count\": 29,\r\n   \"id\": \"466f2e47\",\r\n   \"metadata\": {},\r\n   \"outputs\": [],\r\n   \"source\": [\r\n    \"# 3. Zaman datasının formatını dəyişin və age sütunundakı NaN dəyərləri sütunun medianı ilə doldurun.\"\r\n   ]\r\n  },\r\n  {\r\n   \"cell_type\": \"code\",\r\n   \"execution_count\": 31,\r\n   \"id\": \"2fde0b4d\",\r\n   \"metadata\": {},\r\n   \"outputs\": [],\r\n   \"source\": [\r\n    \"# 4. Sparse olan sütunları müəyyənləşdirin və onların adlarını çap edin.\"\r\n   ]\r\n  },\r\n  {\r\n   \"cell_type\": \"code\",\r\n   \"execution_count\": 33,\r\n   \"id\": \"50fceed8\",\r\n   \"metadata\": {},\r\n   \"outputs\": [],\r\n   \"source\": [\r\n    \"# 5. DataFrame-dən null dəyərləri silin.\"\r\n   ]\r\n  },\r\n  {\r\n   \"cell_type\": \"code\",\r\n   \"execution_count\": 35,\r\n   \"id\": \"76baf6ef\",\r\n   \"metadata\": {},\r\n   \"outputs\": [],\r\n   \"source\": [\r\n    \"# 6. DataFrame-dən yalnız float64 data type olan sütunların xülasəsini çap edin.\"\r\n   ]\r\n  }\r\n ],\r\n \"metadata\": {\r\n  \"kernelspec\": {\r\n   \"display_name\": \"Python 3 (ipykernel)\",\r\n   \"language\": \"python\",\r\n   \"name\": \"python3\"\r\n  },\r\n  \"language_info\": {\r\n   \"codemirror_mode\": {\r\n    \"name\": \"ipython\",\r\n    \"version\": 3\r\n   },\r\n   \"file_extension\": \".py\",\r\n   \"mimetype\": \"text/x-python\",\r\n   \"name\": \"python\",\r\n   \"nbconvert_exporter\": \"python\",\r\n   \"pygments_lexer\": \"ipython3\",\r\n   \"version\": \"3.12.4\"\r\n  }\r\n },\r\n \"nbformat\": 4,\r\n \"nbformat_minor\": 5\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Mentor Tasks/Python/NUMPY/Numpy-Pandas Mentor Tasks 21.08.2025.ipynb b/Mentor Tasks/Python/NUMPY/Numpy-Pandas Mentor Tasks 21.08.2025.ipynb
+--- a/Mentor Tasks/Python/NUMPY/Numpy-Pandas Mentor Tasks 21.08.2025.ipynb	(revision 31ede63eb9c3a2cc939a263d60e4f5c9448b394a)
++++ b/Mentor Tasks/Python/NUMPY/Numpy-Pandas Mentor Tasks 21.08.2025.ipynb	(date 1755795896871)
+@@ -1,229 +1,35 @@
+-{
+- "cells": [
+-  {
+-   "cell_type": "code",
+-   "execution_count": 39,
+-   "id": "fe61ec45",
+-   "metadata": {},
+-   "outputs": [
+-    {
+-     "name": "stdout",
+-     "output_type": "stream",
+-     "text": [
+-      "Requirement already satisfied: openpyxl in c:\\programdata\\anaconda3\\lib\\site-packages (3.1.2)\n",
+-      "Requirement already satisfied: et-xmlfile in c:\\programdata\\anaconda3\\lib\\site-packages (from openpyxl) (1.1.0)\n"
+-     ]
+-    }
+-   ],
+-   "source": [
+-    "%matplotlib inline\n",
+-    "import pandas as pd\n",
+-    "import numpy as np\n",
+-    "import matplotlib.pyplot as plt\n",
+-    "import sys\n",
+-    "!pip install openpyxl"
+-   ]
+-  },
+-  {
+-   "cell_type": "code",
+-   "execution_count": 40,
+-   "id": "394dc7ec",
+-   "metadata": {},
+-   "outputs": [
+-    {
+-     "data": {
+-      "text/html": [
+-       "<div>\n",
+-       "<style scoped>\n",
+-       "    .dataframe tbody tr th:only-of-type {\n",
+-       "        vertical-align: middle;\n",
+-       "    }\n",
+-       "\n",
+-       "    .dataframe tbody tr th {\n",
+-       "        vertical-align: top;\n",
+-       "    }\n",
+-       "\n",
+-       "    .dataframe thead th {\n",
+-       "        text-align: right;\n",
+-       "    }\n",
+-       "</style>\n",
+-       "<table border=\"1\" class=\"dataframe\">\n",
+-       "  <thead>\n",
+-       "    <tr style=\"text-align: right;\">\n",
+-       "      <th></th>\n",
+-       "      <th>Name</th>\n",
+-       "      <th>Age (Years)</th>\n",
+-       "      <th>Income ($)</th>\n",
+-       "      <th>Join Date</th>\n",
+-       "      <th>Gender</th>\n",
+-       "      <th>SparseColumn</th>\n",
+-       "      <th>Category</th>\n",
+-       "    </tr>\n",
+-       "  </thead>\n",
+-       "  <tbody>\n",
+-       "    <tr>\n",
+-       "      <th>0</th>\n",
+-       "      <td>John</td>\n",
+-       "      <td>25.0</td>\n",
+-       "      <td>40000</td>\n",
+-       "      <td>2023-01-10</td>\n",
+-       "      <td>Male</td>\n",
+-       "      <td>None</td>\n",
+-       "      <td>A</td>\n",
+-       "    </tr>\n",
+-       "    <tr>\n",
+-       "      <th>1</th>\n",
+-       "      <td>Jane</td>\n",
+-       "      <td>30.0</td>\n",
+-       "      <td>50000</td>\n",
+-       "      <td>2023-02-15</td>\n",
+-       "      <td>Female</td>\n",
+-       "      <td>None</td>\n",
+-       "      <td>B</td>\n",
+-       "    </tr>\n",
+-       "    <tr>\n",
+-       "      <th>2</th>\n",
+-       "      <td>Alice</td>\n",
+-       "      <td>NaN</td>\n",
+-       "      <td>60000</td>\n",
+-       "      <td>2023-03-20</td>\n",
+-       "      <td>Female</td>\n",
+-       "      <td>None</td>\n",
+-       "      <td>C</td>\n",
+-       "    </tr>\n",
+-       "    <tr>\n",
+-       "      <th>3</th>\n",
+-       "      <td>Bob</td>\n",
+-       "      <td>35.0</td>\n",
+-       "      <td>7000000</td>\n",
+-       "      <td>2023-13-25</td>\n",
+-       "      <td>Male</td>\n",
+-       "      <td>None</td>\n",
+-       "      <td>A</td>\n",
+-       "    </tr>\n",
+-       "    <tr>\n",
+-       "      <th>4</th>\n",
+-       "      <td>None</td>\n",
+-       "      <td>29.0</td>\n",
+-       "      <td>55000</td>\n",
+-       "      <td>NaN</td>\n",
+-       "      <td>Female</td>\n",
+-       "      <td>None</td>\n",
+-       "      <td>B</td>\n",
+-       "    </tr>\n",
+-       "  </tbody>\n",
+-       "</table>\n",
+-       "</div>"
+-      ],
+-      "text/plain": [
+-       "   Name   Age (Years)  Income ($)   Join Date  Gender SparseColumn Category\n",
+-       "0   John         25.0       40000  2023-01-10    Male         None        A\n",
+-       "1   Jane         30.0       50000  2023-02-15  Female         None        B\n",
+-       "2  Alice          NaN       60000  2023-03-20  Female         None        C\n",
+-       "3    Bob         35.0     7000000  2023-13-25    Male         None        A\n",
+-       "4   None         29.0       55000         NaN  Female         None        B"
+-      ]
+-     },
+-     "execution_count": 40,
+-     "metadata": {},
+-     "output_type": "execute_result"
+-    }
+-   ],
+-   "source": [
+-    "data = {\n",
+-    "    \"Name \": [\"John\", \"Jane\", \"Alice\", \"Bob\", None],\n",
+-    "    \"Age (Years)\": [25, 30, np.nan, 35, 29],\n",
+-    "    \"Income ($)\": [40000, 50000, 60000, 7000000, 55000],\n",
+-    "    \"Join Date\": [\"2023-01-10\", \"2023-02-15\", \"2023-03-20\", \"2023-13-25\", \"NaN\"],\n",
+-    "    \"Gender\": [\"Male\", \"Female\", \"Female\", \"Male\", \"Female\"],\n",
+-    "    \"Gender\": [\"Male\", \"Female\", \"Female\", \"Male\", \"Female\"], \n",
+-    "    \"SparseColumn\": [None, None, None, None, None],\n",
+-    "    \"Category\": [\"A\", \"B\", \"C\", \"A\", \"B\"],\n",
+-    "}\n",
+-    "df = pd.DataFrame(data)\n",
+-    "df"
+-   ]
+-  },
+-  {
+-   "cell_type": "code",
+-   "execution_count": 25,
+-   "id": "3a7ec338",
+-   "metadata": {},
+-   "outputs": [],
+-   "source": [
+-    "# 1. Sütun adlarından boşluqları, xüsusi simvolları silin və uyğun bir formata çevirin."
+-   ]
+-  },
+-  {
+-   "cell_type": "code",
+-   "execution_count": 27,
+-   "id": "c1d7c221",
+-   "metadata": {},
+-   "outputs": [],
+-   "source": [
+-    "# 2. DataFrame-in məlumatlarını və sütunların hər birinin type-ını çap edin."
+-   ]
+-  },
+-  {
+-   "cell_type": "code",
+-   "execution_count": 29,
+-   "id": "466f2e47",
+-   "metadata": {},
+-   "outputs": [],
+-   "source": [
+-    "# 3. Zaman datasının formatını dəyişin və age sütunundakı NaN dəyərləri sütunun medianı ilə doldurun."
+-   ]
+-  },
+-  {
+-   "cell_type": "code",
+-   "execution_count": 31,
+-   "id": "2fde0b4d",
+-   "metadata": {},
+-   "outputs": [],
+-   "source": [
+-    "# 4. Sparse olan sütunları müəyyənləşdirin və onların adlarını çap edin."
+-   ]
+-  },
+-  {
+-   "cell_type": "code",
+-   "execution_count": 33,
+-   "id": "50fceed8",
+-   "metadata": {},
+-   "outputs": [],
+-   "source": [
+-    "# 5. DataFrame-dən null dəyərləri silin."
+-   ]
+-  },
+-  {
+-   "cell_type": "code",
+-   "execution_count": 35,
+-   "id": "76baf6ef",
+-   "metadata": {},
+-   "outputs": [],
+-   "source": [
+-    "# 6. DataFrame-dən yalnız float64 data type olan sütunların xülasəsini çap edin."
+-   ]
+-  }
+- ],
+- "metadata": {
+-  "kernelspec": {
+-   "display_name": "Python 3 (ipykernel)",
+-   "language": "python",
+-   "name": "python3"
+-  },
+-  "language_info": {
+-   "codemirror_mode": {
+-    "name": "ipython",
+-    "version": 3
+-   },
+-   "file_extension": ".py",
+-   "mimetype": "text/x-python",
+-   "name": "python",
+-   "nbconvert_exporter": "python",
+-   "pygments_lexer": "ipython3",
+-   "version": "3.12.4"
+-  }
+- },
+- "nbformat": 4,
+- "nbformat_minor": 5
++#%%
++%matplotlib inline
++import pandas as pd
++import numpy as np
++import matplotlib.pyplot as plt
++import sys
++#%%
++data = {
++    "Name ": ["John", "Jane", "Alice", "Bob", None],
++    "Age (Years)": [25, 30, np.nan, 35, 29],
++    "Income ($)": [40000, 50000, 60000, 7000000, 55000],
++    "Join Date": ["2023-01-10", "2023-02-15", "2023-03-20", "2023-13-25", "NaN"],
++    "Gender": ["Male", "Female", "Female", "Male", "Female"],
++    "Gender": ["Male", "Female", "Female", "Male", "Female"],
++    "SparseColumn": [None, None, None, None, None],
++    "Category": ["A", "B", "C", "A", "B"],
+ }
++df = pd.DataFrame(data)
++df
++#%%
++# 1. Sütun adlarından boşluqları, xüsusi simvolları silin və uyğun bir formata çevirin.
++#%%
++df_1 = pd.DataFrame(data)
++df_1.columns = df_1.columns.str.strip()
++df_1.columns = df_1.columns.str.replace('')
++#%%
++# 2. DataFrame-in məlumatlarını və sütunların hər birinin type-ını çap edin.
++#%%
++# 3. Zaman datasının formatını dəyişin və age sütunundakı NaN dəyərləri sütunun medianı ilə doldurun.
++#%%
++# 4. Sparse olan sütunları müəyyənləşdirin və onların adlarını çap edin.
++#%%
++# 5. DataFrame-dən null dəyərləri silin.
++#%%
++# 6. DataFrame-dən yalnız float64 data type olan sütunların xülasəsini çap edin.
+\ No newline at end of file
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"a7294f6d-5378-4593-adfb-0e742872ee6a\" name=\"Changes\" comment=\"First commit\" />\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"Python Script\" />\r\n        <option value=\"Jupyter Notebook\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"GitHubPullRequestSearchHistory\">{\r\n  &quot;lastFilter&quot;: {\r\n    &quot;state&quot;: &quot;OPEN&quot;,\r\n    &quot;assignee&quot;: &quot;Votr2x&quot;\r\n  }\r\n}</component>\r\n  <component name=\"GithubPullRequestsUISettings\">{\r\n  &quot;selectedUrlAndAccountId&quot;: {\r\n    &quot;url&quot;: &quot;https://github.com/Votr2x/CODERS.git&quot;,\r\n    &quot;accountId&quot;: &quot;51cae903-51bf-4d28-ae75-2c803f1bdaf1&quot;\r\n  }\r\n}</component>\r\n  <component name=\"ProjectColorInfo\">{\r\n  &quot;associatedIndex&quot;: 1\r\n}</component>\r\n  <component name=\"ProjectId\" id=\"30sz1WgLTDnYuyozxaltyJVlUAH\" />\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\"><![CDATA[{\r\n  \"keyToString\": {\r\n    \"ModuleVcsDetector.initialDetectionPerformed\": \"true\",\r\n    \"Python.EIGEN.executor\": \"Run\",\r\n    \"RunOnceActivity.ShowReadmeOnStart\": \"true\",\r\n    \"RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252\": \"true\",\r\n    \"RunOnceActivity.git.unshallow\": \"true\",\r\n    \"git-widget-placeholder\": \"master\",\r\n    \"junie.onboarding.icon.badge.shown\": \"true\",\r\n    \"last_opened_file_path\": \"C:/Users/user/Desktop/CODERS\",\r\n    \"node.js.detected.package.eslint\": \"true\",\r\n    \"node.js.detected.package.tslint\": \"true\",\r\n    \"node.js.selected.package.eslint\": \"(autodetect)\",\r\n    \"node.js.selected.package.tslint\": \"(autodetect)\",\r\n    \"nodejs_package_manager_path\": \"npm\",\r\n    \"settings.editor.selected.configurable\": \"project.propVCSSupport.DirectoryMappings\",\r\n    \"to.speed.mode.migration.done\": \"true\",\r\n    \"vue.rearranger.settings.migration\": \"true\"\r\n  }\r\n}]]></component>\r\n  <component name=\"SharedIndexes\">\r\n    <attachedChunks>\r\n      <set>\r\n        <option value=\"bundled-js-predefined-d6986cc7102b-e03c56caf84a-JavaScript-PY-252.23892.515\" />\r\n        <option value=\"bundled-python-sdk-7e47963ff851-f0eec537fc84-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-252.23892.515\" />\r\n      </set>\r\n    </attachedChunks>\r\n  </component>\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"a7294f6d-5378-4593-adfb-0e742872ee6a\" name=\"Changes\" comment=\"\" />\r\n      <created>1754430854258</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1754430854258</updated>\r\n      <workItem from=\"1754430855503\" duration=\"233000\" />\r\n      <workItem from=\"1754490837780\" duration=\"206000\" />\r\n      <workItem from=\"1754560527587\" duration=\"589000\" />\r\n      <workItem from=\"1755101898050\" duration=\"130000\" />\r\n      <workItem from=\"1755102113495\" duration=\"420000\" />\r\n      <workItem from=\"1755102554783\" duration=\"3000\" />\r\n      <workItem from=\"1755442526162\" duration=\"51000\" />\r\n      <workItem from=\"1755442678864\" duration=\"41000\" />\r\n      <workItem from=\"1755442760353\" duration=\"24000\" />\r\n      <workItem from=\"1755443008865\" duration=\"5000\" />\r\n      <workItem from=\"1755443019703\" duration=\"197000\" />\r\n      <workItem from=\"1755443238506\" duration=\"146000\" />\r\n      <workItem from=\"1755443544168\" duration=\"328000\" />\r\n      <workItem from=\"1755443898967\" duration=\"676000\" />\r\n      <workItem from=\"1755446753556\" duration=\"203000\" />\r\n      <workItem from=\"1755447260954\" duration=\"53000\" />\r\n      <workItem from=\"1755447338349\" duration=\"1247000\" />\r\n      <workItem from=\"1755453936731\" duration=\"305000\" />\r\n      <workItem from=\"1755454257501\" duration=\"337000\" />\r\n    </task>\r\n    <task id=\"LOCAL-00001\" summary=\"First commit\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1755454423577</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1755454423577</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"2\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"TypeScriptGeneratedFilesManager\">\r\n    <option name=\"version\" value=\"3\" />\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <ignored-roots>\r\n      <path value=\"$PROJECT_DIR$\" />\r\n      <path value=\"$PROJECT_DIR$/CODERS\" />\r\n    </ignored-roots>\r\n    <MESSAGE value=\"First commit\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"First commit\" />\r\n  </component>\r\n  <component name=\"com.intellij.coverage.CoverageDataManagerImpl\">\r\n    <SUITE FILE_PATH=\"coverage/CODERS$EIGEN.coverage\" NAME=\"EIGEN Coverage Results\" MODIFIED=\"1754491032000\" SOURCE_PROVIDER=\"com.intellij.coverage.DefaultCoverageFileProvider\" RUNNER=\"coverage.py\" COVERAGE_BY_TEST_ENABLED=\"false\" COVERAGE_TRACING_ENABLED=\"false\" WORKING_DIRECTORY=\"$PROJECT_DIR$/Resources/Python/numpy\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision 31ede63eb9c3a2cc939a263d60e4f5c9448b394a)
++++ b/.idea/workspace.xml	(date 1756129981917)
+@@ -4,7 +4,10 @@
+     <option name="autoReloadType" value="SELECTIVE" />
+   </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="a7294f6d-5378-4593-adfb-0e742872ee6a" name="Changes" comment="First commit" />
++    <list default="true" id="a7294f6d-5378-4593-adfb-0e742872ee6a" name="Changes" comment="Comp2 commit">
++      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/Mentor Tasks/Python/NUMPY/Numpy-Pandas Mentor Tasks 21.08.2025.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Mentor Tasks/Python/NUMPY/Numpy-Pandas Mentor Tasks 21.08.2025.ipynb" afterDir="false" />
++    </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+@@ -41,26 +44,26 @@
+     <option name="hideEmptyMiddlePackages" value="true" />
+     <option name="showLibraryContents" value="true" />
+   </component>
+-  <component name="PropertiesComponent"><![CDATA[{
+-  "keyToString": {
+-    "ModuleVcsDetector.initialDetectionPerformed": "true",
+-    "Python.EIGEN.executor": "Run",
+-    "RunOnceActivity.ShowReadmeOnStart": "true",
+-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+-    "RunOnceActivity.git.unshallow": "true",
+-    "git-widget-placeholder": "master",
+-    "junie.onboarding.icon.badge.shown": "true",
+-    "last_opened_file_path": "C:/Users/user/Desktop/CODERS",
+-    "node.js.detected.package.eslint": "true",
+-    "node.js.detected.package.tslint": "true",
+-    "node.js.selected.package.eslint": "(autodetect)",
+-    "node.js.selected.package.tslint": "(autodetect)",
+-    "nodejs_package_manager_path": "npm",
+-    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
+-    "to.speed.mode.migration.done": "true",
+-    "vue.rearranger.settings.migration": "true"
++  <component name="PropertiesComponent">{
++  &quot;keyToString&quot;: {
++    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
++    &quot;Python.EIGEN.executor&quot;: &quot;Run&quot;,
++    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
++    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
++    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
++    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
++    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
++    &quot;last_opened_file_path&quot;: &quot;C:/Users/user/Desktop/CODERS&quot;,
++    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
++    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
++    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
++    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
++    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
++    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;,
++    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
++    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+   }
+-}]]></component>
++}</component>
+   <component name="SharedIndexes">
+     <attachedChunks>
+       <set>
+@@ -95,6 +98,14 @@
+       <workItem from="1755447338349" duration="1247000" />
+       <workItem from="1755453936731" duration="305000" />
+       <workItem from="1755454257501" duration="337000" />
++      <workItem from="1755466365571" duration="42000" />
++      <workItem from="1755528386382" duration="1525000" />
++      <workItem from="1755529946575" duration="981000" />
++      <workItem from="1755531501624" duration="4001000" />
++      <workItem from="1755701450493" duration="2132000" />
++      <workItem from="1755704019336" duration="4101000" />
++      <workItem from="1755788172372" duration="5874000" />
++      <workItem from="1756129449871" duration="527000" />
+     </task>
+     <task id="LOCAL-00001" summary="First commit">
+       <option name="closed" value="true" />
+@@ -104,7 +115,55 @@
+       <option name="project" value="LOCAL" />
+       <updated>1755454423577</updated>
+     </task>
+-    <option name="localTasksCounter" value="2" />
++    <task id="LOCAL-00002" summary="Feedback commit">
++      <option name="closed" value="true" />
++      <created>1755456175438</created>
++      <option name="number" value="00002" />
++      <option name="presentableId" value="LOCAL-00002" />
++      <option name="project" value="LOCAL" />
++      <updated>1755456175438</updated>
++    </task>
++    <task id="LOCAL-00003" summary="Feedback commit">
++      <option name="closed" value="true" />
++      <created>1755531667721</created>
++      <option name="number" value="00003" />
++      <option name="presentableId" value="LOCAL-00003" />
++      <option name="project" value="LOCAL" />
++      <updated>1755531667721</updated>
++    </task>
++    <task id="LOCAL-00004" summary="Feedback commit">
++      <option name="closed" value="true" />
++      <created>1755535706584</created>
++      <option name="number" value="00004" />
++      <option name="presentableId" value="LOCAL-00004" />
++      <option name="project" value="LOCAL" />
++      <updated>1755535706584</updated>
++    </task>
++    <task id="LOCAL-00005" summary="Comp2 commit">
++      <option name="closed" value="true" />
++      <created>1755706569108</created>
++      <option name="number" value="00005" />
++      <option name="presentableId" value="LOCAL-00005" />
++      <option name="project" value="LOCAL" />
++      <updated>1755706569108</updated>
++    </task>
++    <task id="LOCAL-00006" summary="Comp2 commit">
++      <option name="closed" value="true" />
++      <created>1755709419474</created>
++      <option name="number" value="00006" />
++      <option name="presentableId" value="LOCAL-00006" />
++      <option name="project" value="LOCAL" />
++      <updated>1755709419474</updated>
++    </task>
++    <task id="LOCAL-00007" summary="Comp2 commit">
++      <option name="closed" value="true" />
++      <created>1755795195270</created>
++      <option name="number" value="00007" />
++      <option name="presentableId" value="LOCAL-00007" />
++      <option name="project" value="LOCAL" />
++      <updated>1755795195270</updated>
++    </task>
++    <option name="localTasksCounter" value="8" />
+     <servers />
+   </component>
+   <component name="TypeScriptGeneratedFilesManager">
+@@ -116,7 +175,9 @@
+       <path value="$PROJECT_DIR$/CODERS" />
+     </ignored-roots>
+     <MESSAGE value="First commit" />
+-    <option name="LAST_COMMIT_MESSAGE" value="First commit" />
++    <MESSAGE value="Feedback commit" />
++    <MESSAGE value="Comp2 commit" />
++    <option name="LAST_COMMIT_MESSAGE" value="Comp2 commit" />
+   </component>
+   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+     <SUITE FILE_PATH="coverage/CODERS$EIGEN.coverage" NAME="EIGEN Coverage Results" MODIFIED="1754491032000" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Resources/Python/numpy" />

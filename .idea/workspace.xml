@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a7294f6d-5378-4593-adfb-0e742872ee6a" name="Changes" comment="First commit" />
+    <list default="true" id="a7294f6d-5378-4593-adfb-0e742872ee6a" name="Changes" comment="Comp1 commit">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -30,7 +32,7 @@
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/Votr2x/CODERS.git&quot;,
-    &quot;accountId&quot;: &quot;51cae903-51bf-4d28-ae75-2c803f1bdaf1&quot;
+    &quot;accountId&quot;: &quot;b6c2f23d-b45c-4174-b73a-6c849ef1a4d0&quot;
   }
 }</component>
   <component name="ProjectColorInfo">{
@@ -41,26 +43,35 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "Python.EIGEN.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "master",
-    "junie.onboarding.icon.badge.shown": "true",
-    "last_opened_file_path": "C:/Users/user/Desktop/CODERS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
-    "to.speed.mode.migration.done": "true",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;Python.EIGEN.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/pj/PycharmProjects/CODERS/Resources/Python&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Resources/Python" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Resources/Python/pandas" />
+      <recent name="$PROJECT_DIR$/Resources/Python/numpy" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -95,6 +106,37 @@
       <workItem from="1755447338349" duration="1247000" />
       <workItem from="1755453936731" duration="305000" />
       <workItem from="1755454257501" duration="337000" />
+      <workItem from="1755465479336" duration="141000" />
+      <workItem from="1755469208896" duration="3006000" />
+      <workItem from="1755472502248" duration="24000" />
+      <workItem from="1755513547504" duration="5860000" />
+      <workItem from="1755543098234" duration="166000" />
+      <workItem from="1755549547464" duration="206000" />
+      <workItem from="1755549777137" duration="529000" />
+      <workItem from="1755550336349" duration="93000" />
+      <workItem from="1755550458015" duration="184000" />
+      <workItem from="1755550670199" duration="394000" />
+      <workItem from="1755551091517" duration="197000" />
+      <workItem from="1755551326641" duration="2308000" />
+      <workItem from="1755596614255" duration="11871000" />
+      <workItem from="1755633753548" duration="110000" />
+      <workItem from="1755633988305" duration="5366000" />
+      <workItem from="1755731753791" duration="244000" />
+      <workItem from="1755773035242" duration="1986000" />
+      <workItem from="1755809675528" duration="1121000" />
+      <workItem from="1755878669189" duration="5022000" />
+      <workItem from="1756064105114" duration="6473000" />
+      <workItem from="1756156855046" duration="1138000" />
+      <workItem from="1756239482778" duration="464000" />
+      <workItem from="1756244811832" duration="16000" />
+      <workItem from="1756244842994" duration="18000" />
+      <workItem from="1756246858962" duration="20000" />
+      <workItem from="1756250897169" duration="40000" />
+      <workItem from="1756250951994" duration="1999000" />
+      <workItem from="1756253147794" duration="317000" />
+      <workItem from="1756293627116" duration="3594000" />
+      <workItem from="1756334015459" duration="812000" />
+      <workItem from="1756334948081" duration="93000" />
     </task>
     <task id="LOCAL-00001" summary="First commit">
       <option name="closed" value="true" />
@@ -104,7 +146,151 @@
       <option name="project" value="LOCAL" />
       <updated>1755454423577</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Test commit">
+      <option name="closed" value="true" />
+      <created>1755465251688</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1755465251688</updated>
+    </task>
+    <task id="LOCAL-00003" summary="New commit">
+      <option name="closed" value="true" />
+      <created>1755472467031</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1755472467031</updated>
+    </task>
+    <task id="LOCAL-00004" summary="New commit">
+      <option name="closed" value="true" />
+      <created>1755522133241</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1755522133241</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Comp1 commit">
+      <option name="closed" value="true" />
+      <created>1755553559766</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1755553559766</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Comp1 commit">
+      <option name="closed" value="true" />
+      <created>1755596746848</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1755596746848</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Comp1 commit">
+      <option name="closed" value="true" />
+      <created>1755627885285</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1755627885285</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Comp1 commit">
+      <option name="closed" value="true" />
+      <created>1755633639663</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1755633639663</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Comp1 commit">
+      <option name="closed" value="true" />
+      <created>1755633677457</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1755633677457</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Comp1 commit">
+      <option name="closed" value="true" />
+      <created>1755640451613</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1755640451613</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Comp1 commit">
+      <option name="closed" value="true" />
+      <created>1755892401928</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1755892401929</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Comp1 commit">
+      <option name="closed" value="true" />
+      <created>1755901873821</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1755901873821</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Comp1 commit">
+      <option name="closed" value="true" />
+      <created>1756064741596</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1756064741596</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Comp1 commit">
+      <option name="closed" value="true" />
+      <created>1756073221040</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1756073221040</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Comp1 commit">
+      <option name="closed" value="true" />
+      <created>1756252894595</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1756252894595</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Comp1 commit">
+      <option name="closed" value="true" />
+      <created>1756253429273</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1756253429273</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Comp1 commit">
+      <option name="closed" value="true" />
+      <created>1756293681728</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1756293681728</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Comp1 commit">
+      <option name="closed" value="true" />
+      <created>1756334819939</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1756334819939</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Comp1 commit">
+      <option name="closed" value="true" />
+      <created>1756334990348</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1756334990348</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -116,7 +302,10 @@
       <path value="$PROJECT_DIR$/CODERS" />
     </ignored-roots>
     <MESSAGE value="First commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="First commit" />
+    <MESSAGE value="Test commit" />
+    <MESSAGE value="New commit" />
+    <MESSAGE value="Comp1 commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Comp1 commit" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/CODERS$EIGEN.coverage" NAME="EIGEN Coverage Results" MODIFIED="1754491032000" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Resources/Python/numpy" />

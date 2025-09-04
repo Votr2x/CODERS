@@ -1,0 +1,201 @@
+ID,age,income,debt,education,credit_score,loan_amount,loan_term,approval_status,missing_values
+1,56,9901,3051,PhD,760,1346,36,Approved,nan
+2,69,6575,15979,High School,846,11454,60,Rejected,nan
+3,46,6530,16388,Bachelor,552,14203,12,Approved,Value
+4,32,5413,21606,High School,689,48653,60,Approved,nan
+5,60,4748,21699,Master,555,47014,12,Rejected,Value
+6,25,1663,21253,Master,749,23200,24,Approved,Value
+7,38,2998,876,High School,309,32543,48,Approved,Value
+8,56,8994,25567,PhD,541,6969,12,Rejected,Value
+9,36,2495,23411,PhD,550,30605,60,Approved,Value
+10,40,4304,4142,High School,304,42601,24,Approved,Value
+11,28,4763,15202,High School,418,26886,12,Approved,Value
+12,28,6232,6966,Master,673,49876,36,Rejected,Value
+13,41,2853,7079,PhD,364,46087,48,Approved,Value
+14,53,7585,7987,High School,445,37476,12,Rejected,Value
+15,57,2291,6799,Master,523,39551,24,Rejected,nan
+16,41,4581,28940,PhD,538,2548,36,Approved,Value
+17,20,8554,4465,Bachelor,476,39501,24,Approved,Value
+18,39,8280,17019,Master,581,13441,24,Approved,Value
+19,19,2636,13417,PhD,362,45875,36,Rejected,Value
+20,41,4696,18077,PhD,516,43033,24,Approved,nan
+21,61,1698,26258,Master,760,2328,36,Approved,nan
+22,47,5737,21136,Bachelor,404,2417,12,Approved,Value
+23,55,1854,8311,Master,398,21118,36,Approved,nan
+24,19,9164,17214,PhD,810,32754,36,Approved,Value
+25,38,6855,14098,High School,684,40256,48,Rejected,Value
+26,50,8392,28251,High School,704,47862,36,Rejected,Value
+27,29,7528,5177,Master,817,20628,36,Approved,Value
+28,39,6249,14262,PhD,775,46245,12,Approved,Value
+29,61,6172,25945,High School,736,509,48,Approved,Value
+30,42,2707,25316,PhD,322,17144,60,Approved,Value
+31,66,6791,8308,Master,757,22922,12,Rejected,Value
+32,44,6535,5949,High School,382,10365,12,Approved,Value
+33,59,5931,19222,PhD,444,2719,60,Rejected,Value
+34,45,4510,1150,High School,384,40309,36,Rejected,Value
+35,33,1202,23944,Master,377,5787,24,Approved,Value
+36,32,5218,1931,PhD,756,34887,48,Rejected,Value
+37,64,9958,9204,High School,300,9012,24,Rejected,Value
+38,68,5389,18048,Master,350,1842,60,Rejected,Value
+39,61,3327,1081,High School,745,43836,12,Rejected,Value
+40,69,9004,29305,High School,748,19716,12,Approved,nan
+41,20,3931,16896,Bachelor,787,28034,48,Approved,Value
+42,54,8777,27425,Bachelor,333,14731,12,Rejected,Value
+43,68,1197,13407,Master,647,32793,12,Approved,Value
+44,24,8125,7805,Bachelor,394,27114,48,Approved,Value
+45,38,2930,5237,Master,371,36758,48,Approved,Value
+46,26,7287,16943,Bachelor,453,28753,60,Approved,Value
+47,56,9800,20056,High School,549,42578,12,Approved,nan
+48,35,5282,12775,Master,737,41252,12,Rejected,Value
+49,21,3511,23788,Master,417,18488,60,Approved,nan
+50,42,1659,16244,High School,605,31537,36,Approved,Value
+51,31,3811,13184,Master,567,12719,36,Approved,Value
+52,67,8098,3343,Master,353,735,36,Approved,Value
+53,26,7546,13500,Bachelor,535,43429,60,Rejected,Value
+54,43,2986,20454,Master,688,2408,12,Rejected,Value
+55,19,9338,29375,PhD,700,9067,60,Rejected,nan
+56,37,3911,9662,High School,602,36798,60,Rejected,Value
+57,45,2734,16964,Bachelor,506,5756,36,Approved,nan
+58,64,2843,15125,Bachelor,528,19519,24,Rejected,Value
+59,24,9680,23388,PhD,374,8662,12,Approved,Value
+60,61,3976,26870,High School,734,5915,36,Approved,nan
+61,25,2959,8130,High School,402,36659,24,Approved,Value
+62,64,6759,19531,Bachelor,721,44425,24,Approved,Value
+63,52,7694,20633,Master,605,6451,48,Approved,nan
+64,31,3385,1679,Bachelor,397,22352,12,Rejected,Value
+65,34,5736,3506,High School,634,8507,24,Rejected,Value
+66,53,2802,13284,PhD,734,42332,36,Rejected,Value
+67,67,9155,7253,Bachelor,746,31023,48,Rejected,Value
+68,57,9120,19128,High School,607,23825,12,Approved,Value
+69,21,7616,27932,Bachelor,548,21704,60,Rejected,Value
+70,19,6534,28621,Master,465,16024,36,Approved,Value
+71,23,5061,9435,Bachelor,780,19782,24,Rejected,Value
+72,59,1262,21572,Bachelor,634,24430,24,Approved,Value
+73,21,7287,11310,High School,841,577,36,Approved,Value
+74,46,9815,13296,High School,405,40845,24,Rejected,Value
+75,35,3049,18525,High School,380,21111,48,Approved,nan
+76,43,6423,13245,Bachelor,432,17484,12,Approved,nan
+77,61,5548,27635,Master,437,14560,48,Rejected,Value
+78,51,4108,29124,PhD,483,17949,24,Approved,Value
+79,27,8158,29899,PhD,700,19020,60,Rejected,Value
+80,53,8400,11151,High School,629,43803,12,Rejected,nan
+81,31,4170,10457,High School,807,10010,12,Rejected,Value
+82,48,3255,23001,Bachelor,368,29787,36,Approved,nan
+83,65,2154,2479,PhD,845,28673,36,Approved,Value
+84,32,5499,22868,High School,352,40211,60,Approved,Value
+85,25,7295,29222,Master,749,12454,12,Rejected,Value
+86,31,7197,26211,Master,504,8304,60,Approved,Value
+87,40,2648,29984,High School,425,7065,36,Rejected,nan
+88,57,6539,23805,High School,342,6484,36,Rejected,Value
+89,38,5199,26333,PhD,410,22026,12,Approved,Value
+90,33,9445,4452,PhD,482,37938,48,Rejected,Value
+91,62,3557,26646,Bachelor,394,19074,24,Approved,nan
+92,35,6592,5881,PhD,673,9684,36,Approved,Value
+93,64,1098,23049,Master,819,19596,36,Approved,Value
+94,41,3200,14069,Master,659,2692,48,Approved,Value
+95,43,3961,2849,High School,580,34516,48,Approved,nan
+96,42,5973,27827,PhD,494,11746,60,Rejected,nan
+97,62,5433,7390,Bachelor,494,46058,60,Rejected,Value
+98,58,3869,23289,Master,392,18881,24,Rejected,Value
+99,46,1956,11922,Master,360,36955,24,Approved,nan
+100,32,9352,2489,Bachelor,350,27227,12,Approved,Value
+101,62,6699,9823,Bachelor,702,4518,60,Approved,nan
+102,18,7944,27392,Master,304,11802,36,Rejected,Value
+103,42,5493,9207,Master,765,2470,60,Approved,nan
+104,24,5911,9540,Bachelor,833,41657,36,Rejected,Value
+105,26,4987,16364,Master,704,27702,48,Rejected,nan
+106,41,7015,4611,High School,812,31610,60,Approved,Value
+107,18,2218,27663,High School,532,18086,48,Approved,Value
+108,61,5496,19223,Bachelor,823,25019,24,Rejected,Value
+109,25,5735,24911,PhD,645,31773,24,Approved,nan
+110,41,5555,5878,Bachelor,345,22451,12,Rejected,Value
+111,28,9050,29168,Bachelor,845,15874,60,Approved,Value
+112,68,4446,16347,PhD,377,6288,48,Approved,nan
+113,34,2045,25471,PhD,372,5908,36,Rejected,Value
+114,25,7893,22687,PhD,548,25553,24,Approved,Value
+115,52,2693,28122,High School,346,9946,24,Rejected,nan
+116,52,4436,851,Master,420,1422,36,Approved,Value
+117,50,9754,18071,High School,513,33687,48,Rejected,Value
+118,22,6895,26507,Master,538,11289,48,Rejected,Value
+119,59,4354,6833,High School,355,32684,60,Approved,nan
+120,56,1225,11938,Master,649,1620,60,Rejected,nan
+121,58,5893,2427,High School,406,44528,12,Approved,Value
+122,45,8022,26144,PhD,347,32654,24,Approved,Value
+123,24,6600,4000,Bachelor,636,17834,60,Approved,Value
+124,26,8996,5052,High School,325,2836,48,Rejected,Value
+125,25,8683,2738,Master,556,38641,36,Rejected,Value
+126,29,5642,28074,PhD,307,2743,48,Approved,Value
+127,51,8679,22116,High School,552,19529,24,Approved,Value
+128,50,9208,5387,High School,602,32765,48,Rejected,nan
+129,65,8339,8002,PhD,355,37880,12,Approved,Value
+130,40,3205,5536,High School,825,47214,24,Approved,Value
+131,41,2069,13479,Bachelor,773,44372,36,Rejected,Value
+132,54,4444,3913,High School,327,46697,12,Approved,Value
+133,52,2060,17450,Bachelor,377,24210,24,Rejected,nan
+134,61,3327,24107,Bachelor,515,29986,36,Approved,nan
+135,57,4420,20764,PhD,685,6871,12,Rejected,Value
+136,39,1301,10636,High School,664,6859,12,Approved,Value
+137,44,1606,20491,PhD,825,41131,24,Approved,nan
+138,52,4170,5726,High School,611,36496,60,Rejected,Value
+139,18,1699,3373,High School,306,20603,12,Approved,Value
+140,52,6088,12161,Master,302,14882,12,Rejected,Value
+141,54,1190,27122,High School,662,19255,36,Approved,Value
+142,64,1980,25329,PhD,807,36159,48,Rejected,Value
+143,31,3975,2082,Bachelor,573,4256,24,Rejected,Value
+144,20,7102,27350,High School,805,21109,24,Rejected,Value
+145,18,2184,27472,Master,314,49038,60,Rejected,nan
+146,22,4327,28761,PhD,491,16978,60,Approved,Value
+147,43,4394,25351,High School,784,35942,24,Approved,Value
+148,31,9319,23132,PhD,327,40166,60,Rejected,nan
+149,56,2816,16281,Master,338,10647,36,Rejected,Value
+150,44,6854,15305,Master,572,34061,24,Rejected,Value
+151,26,7709,9817,PhD,530,35384,60,Approved,Value
+152,32,1569,11261,High School,385,6279,24,Approved,Value
+153,32,6442,417,Bachelor,773,12798,48,Approved,Value
+154,43,2895,24690,Master,425,14653,12,Approved,Value
+155,59,3733,8808,High School,836,44379,24,Rejected,Value
+156,30,4863,20358,High School,444,11289,12,Rejected,Value
+157,68,8455,3267,Bachelor,824,44665,60,Rejected,Value
+158,49,5014,17209,Master,511,13499,12,Approved,Value
+159,56,2686,24052,Master,324,1314,24,Approved,Value
+160,66,4009,5745,High School,693,49997,48,Approved,Value
+161,69,8806,26092,High School,366,11041,60,Rejected,Value
+162,49,1154,11338,Bachelor,532,25438,24,Rejected,Value
+163,21,2409,412,Bachelor,408,2943,60,Approved,Value
+164,47,1784,7543,Master,445,10957,36,Rejected,Value
+165,54,9096,7587,PhD,410,10880,12,Approved,nan
+166,40,8560,728,Master,527,8283,36,Approved,Value
+167,56,8343,27924,High School,410,44741,24,Rejected,nan
+168,62,8206,23548,Master,769,17868,48,Approved,nan
+169,32,6596,27384,PhD,333,15828,60,Rejected,Value
+170,60,6801,25251,Bachelor,668,26715,12,Approved,Value
+171,46,3806,11657,PhD,724,34095,60,Rejected,nan
+172,53,1537,5988,PhD,817,27806,24,Rejected,Value
+173,30,6986,18888,PhD,581,20415,60,Rejected,Value
+174,49,2841,2967,Bachelor,619,40415,12,Approved,Value
+175,24,9716,14527,PhD,742,37719,24,Approved,Value
+176,68,7971,19170,PhD,614,15843,60,Rejected,nan
+177,39,6625,16048,PhD,676,46903,48,Rejected,Value
+178,45,3950,17506,High School,588,39227,24,Approved,nan
+179,19,8992,20463,PhD,736,626,24,Approved,Value
+180,59,5780,17955,Bachelor,576,28132,48,Approved,Value
+181,62,3368,5073,PhD,802,42063,36,Rejected,Value
+182,23,7655,5104,PhD,815,44909,12,Approved,Value
+183,45,9173,2143,Bachelor,649,21030,36,Approved,Value
+184,45,5495,26263,PhD,745,40464,60,Rejected,nan
+185,61,7002,23190,Bachelor,649,44827,48,Approved,Value
+186,61,7614,7357,PhD,436,3868,36,Approved,Value
+187,37,6919,28708,Bachelor,542,4297,24,Approved,Value
+188,47,1853,12043,PhD,842,48382,60,Rejected,Value
+189,28,5146,3440,PhD,339,14218,60,Rejected,Value
+190,45,4769,20150,High School,528,35060,36,Rejected,nan
+191,42,1574,5644,High School,847,11553,36,Rejected,Value
+192,56,2148,10518,PhD,522,22616,48,Rejected,Value
+193,50,7293,14552,PhD,305,36744,12,Rejected,Value
+194,18,7457,2914,Master,621,36685,36,Rejected,Value
+195,44,8509,21352,Bachelor,767,2145,36,Approved,Value
+196,69,5777,22301,Master,374,48023,24,Approved,Value
+197,30,4854,13584,High School,303,19756,60,Rejected,Value
+198,58,3491,12144,High School,417,36340,12,Approved,Value
+199,20,4124,14397,High School,803,35122,24,Approved,Value
+200,56,6691,8787,High School,740,37930,48,Rejected,Value
